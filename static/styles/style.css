@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
 h1,h2,h3{ font-family: 'Poppins', cursive; }
 
-p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }
+p{   text-align: justify; text-justify: inter-word; line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }
 
 h1{ font-size: 4em; line-height: 1; }
 h2{ font-size: 2.2em; line-height: 1.1; }
@@ -109,7 +109,7 @@ b.max-bold{ font-weight: 700; }
 
 header{ position: absolute; top: 30px; left: 0; right: 0; z-index: 100; }
 
-header .heading-wrapper{ border-radius: 5px; padding: 30px 40px 20px; background: #FFFFFF; color: #333; }
+header .heading-wrapper{ border-radius: 0px; padding: 30px 40px 20px; background: #FFFFFF; color: #333; }
 
 header .info{ margin-bottom: 10px; }
 
