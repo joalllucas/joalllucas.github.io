@@ -109,7 +109,7 @@ b.max-bold{ font-weight: 700; }
 
 header{ position: absolute; top: 30px; left: 0; right: 0; z-index: 100; }
 
-header .heading-wrapper{ border-radius: 0px; padding: 30px 40px 20px; background: #FFFFFF; color: #333; }
+header .heading-wrapper{ border-radius: 15px; padding: 30px 40px 20px; background: #FFFFFF; color: #333; }
 
 header .info{ margin-bottom: 10px; }
 
@@ -137,7 +137,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 .intro-section:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
 	height: 150px; z-index: -1; background: #fff; }
 
-.intro{ padding: 0 20px; margin-top: 100px; text-align: center; background: #fff; }
+.intro{ padding: 0 20px; margin-top: 100px; text-align: center; background: #fff; border-radius: 15px; }
 
 .intro .profile-img{ height: 200px; width: 200px; border-radius: 100px; margin: 0 auto; 
 	overflow: hidden; position: relative; top: -100px; margin-bottom: -70px;  }
