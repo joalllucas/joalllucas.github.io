@@ -322,7 +322,6 @@ a:focus, .button:focus, button:focus, .btn:focus {
 .section_tittle p {
   color: #7f7f7f;
   font-weight: 500;
-  text-transform: capitalize;
   margin-bottom: 26px;
   font-size: 14px;
 }
@@ -507,7 +506,6 @@ ul {
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  text-transform: capitalize;
   border: 1px solid #e4e6ea;
   border-radius: 2px;
   font-family: "Playfair Display", serif;
@@ -2328,7 +2326,6 @@ ul {
   padding: 38px 23px;
   font-family: "Playfair Display", serif;
   line-height: 13px;
-  text-transform: capitalize;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2370,7 +2367,6 @@ ul {
   font-size: 14px;
   padding: 9px 18px !important;
   color: #000 !important;
-  text-transform: capitalize;
 }
 
 /* line 106, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
@@ -2587,7 +2583,6 @@ ul {
 /* line 63, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
 .banner_part .banner_text h5 {
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 500;
   color: #242429;
   margin-bottom: 0;
@@ -2597,7 +2592,6 @@ ul {
 /* line 72, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
 .banner_part .banner_text h1 {
   font-size: 60px;
-  text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 12px;
   line-height: 1.2;
@@ -2928,7 +2922,6 @@ ul {
 /* line 173, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
 .banner_item .single_item h5 {
   font-size: 18px;
-  text-transform: capitalize;
   color: #242429;
 }
 
@@ -5591,7 +5584,6 @@ h1, h2, h3, h4, h5, h6 {
 /* line 79, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_blog_part.scss */
 .blog_part .single-home-blog .card .card-body a {
   color: #fff;
-  text-transform: capitalize;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
@@ -5661,7 +5653,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  text-transform: capitalize;
 }
 
 @media (max-width: 576px) {
@@ -5989,7 +5980,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-size: 100px;
   font-weight: 700;
-  text-transform: capitalize;
   text-align: center;
 }
 
@@ -6018,7 +6008,6 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumb_part .breadcrumb_iner .breadcrumb_iner_item p {
   font-size: 15px;
   color: #fff;
-  text-transform: capitalize;
 }
 
 /* line 45, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_breadcrumb.scss */
