@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Joao Lucas</h1>
+					<p>
+						<small>Candidato a NUPEC-D</a></small>
+					</p>
+				</section>
+
+				<section>
+                    <section data-background-transition="zoom">
+                        <h2>Apresentação</h2>
+                    </section>
+                    <section data-background="media/4.png">
+						<div style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px;">
+							<h2>Software livre, jogos e música</h2>
+						</div>
+					</section>
+                </section>
+
+                <section data-background-transition="zoom">
+                    <section>
+                        <h2>Motivação</h2>
+                    </section>
+                    <section data-background="media/2.gif">
+						<div style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px;">
+							<h2>O que é ser pesquisador?</h2>
+						</div>
+					</section>
+					<section data-background="media/3.gif">
+						<div style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px;">
+							<h2>É apenas ser você!</h2>
+						</div>
+					</section>
+                </section>
+                
+                <section data-background-transition="zoom">
+                    <section>
+                        <h2>Interesse pelo cargo</h2>
+                    </section>
+                    <section data-background="media/7.gif">
+						<div style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px;">
+							<h2>Sistema de Cadastro e Gerenciamento de Funcionários</h2>
+						</div>
+					</section>
+					<section data-background-video="media/1.mp4" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Sistema de Auxílio e Gestão do Aprendizado (SAGA)</h2>
+						</div>
+					</section>
+                </section>
+                
+                <section data-background-transition="zoom">
+                    <section>
+                        <h2>Histórico na IFMSA</h2>
+                    </section>
+                    <section data-background="media/5.png" data-background-repeat="repeat" data-background-size="768px">
+                    <div style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px;">
+							<h2>carta de candidatura</h2>
+						</div>
+					</section>
+					<section data-background="media/6.png" data-background-repeat="repeat" data-background-size="768px">
+					</section>
+                </section>
+                
+                <section data-background-transition="zoom">
+                    <section>
+                        <h2>Metas de trabalho</h2>
+                    </section>
+                    <section>
+						<p>Fomentar a pesquisa científica;</p>
+						<p class="fragment fade-up">Criar uma agenda de inciação científica;</p>
+						<p class="fragment fade-up">Promover incentivo às publicações científicas;</p>
+						<p class="fragment fade-up">Implementar inovação.</p>
+                        </section>
+                </section>
+                
+				<section  data-background-transition="zoom" data-background-iframe="https://joalllucas.github.io" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>joalllucas.github.io</h2>
+						<p>Se a vida fosse justa, não se chamaria "vida".</p>
+					</div>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
