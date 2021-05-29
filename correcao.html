@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ferramenta de Correção</title>
+        <link rel="icon" href="https://img.icons8.com/cotton/2x/edit--v2.png" />
+        <style>
+            body {
+                font-family: monospace;
+                background: #e0f2f1;
+            }
+            .form-style-5{
+                background: #4db6ad;
+                max-width: 500px;
+                margin: 10px auto;
+                padding: 20px;
+                border: solid 2px;
+                border-color: #2E2E2E;
+                border-radius: 15px 15px 15px 0px;
+            }
+            .form-style-5 fieldset{
+                border: none;
+            }
+            .form-style-5 legend {
+                font-size: 1.4em;
+            }
+            .form-style-5 textarea,
+            .form-style-5 select {
+                resize: vertical; 
+                background: #ffffff;
+                border: none;
+                border-radius: 15px 15px 15px 0px;
+                font-family: monospace;
+                font-size: 15px;
+                padding: 10px;
+                width: 100%;
+                -webkit-box-sizing: border-box;
+            }
+            .form-style-5 .number {
+                background: #2E2E2E;
+                color: #fff;
+                width: 30px;
+                display: inline-block;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 15px 15px 15px 0px;
+            }
+            .form-style-5 input[type="button"]{
+                cursor: pointer;
+                padding: 19px 39px 18px 39px;
+                color: #FFF;
+                border-radius: 15px 15px 15px 0px;
+                background: #2E2E2E;
+                font-size: 18px;
+                font-family: monospace;
+                width: 100%;
+                border: 1px solid #212121;
+                border-width: 1px 1px 3px;
+            }
+            .form-style-5 input[type="button"]:hover{ 
+                background-color: #212121;
+            }
+            .checkbox input[type="checkbox"] {
+                opacity: 0;
+            }
+            .checkbox label::before{
+                content: "";
+                display: inline-block;
+                height: 18px;
+                width: 18px;
+                border-radius: 15px 15px 15px 0px;
+                background-color: #2E2E2E;
+            }
+            .checkbox label::after {
+                color: #fff;
+                display: inline-block;
+                height: 6px;
+                width: 9px;
+                border-left: 2px solid;
+                border-bottom: 2px solid;
+                transform: rotate(-45deg);
+            }
+            .checkbox label {
+                position: relative;
+            }
+            .checkbox label::before{
+                position: relative;
+            }
+            .checkbox label::after {
+                position: absolute;
+            }
+            .checkbox label::before {
+                top: 0px;
+            }
+            .checkbox label::after {
+                left: 3px;
+                top: -2px;
+            }
+            .checkbox input[type="checkbox"] + label::after {
+                content: none;
+            }
+            .checkbox input[type="checkbox"]:checked + label::after {
+                content: "";
+            }
+            a {
+                text-decoration: none;
+            }
+        </style>
+        <script>
+        function adicionar(){
+            comentario = document.getElementById("comentario").value;
+            if(comentario != ""){
+                linha = document.getElementById("linha").value;
+                competencia = "";
+                for(count = 1; count <= 5; count++){
+                    c = "C" + count;
+                    check = document.getElementById(c).checked;
+                    if(check == true) {
+                        if(competencia == ""){
+                            competencia = c;
+                        }else{
+                            competencia = competencia + "/" + c;
+                        }
+                    }
+                }
+                if(competencia != ""){
+                    competencia = " (" + competencia + ")";
+                }
+                correcao = document.getElementById("correcao").value;
+                correcao = correcao + linha + " - " + comentario + competencia + "\n";
+                document.getElementById("correcao").value = correcao;
+                document.getElementById("correcao").select();
+                document.execCommand("copy");
+                window.getSelection().removeAllRanges();
+                document.getElementById("linha").selectedIndex = 0;
+                comentario = document.getElementById("comentario").value = "";
+                for(count = 1; count <= 5; count++){
+                    c = "C" + count;
+                    document.getElementById(c).checked = false;
+                }
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="form-style-5">
+            <legend><span class="number">1</span> Observações</legend><br>
+            <select id="linha">
+                <option value="L01">L01</option>
+                <option value="L02">L02</option>
+                <option value="L03">L03</option>
+                <option value="L04">L04</option>
+                <option value="L05">L05</option>
+                <option value="L06">L06</option>
+                <option value="L07">L07</option>
+                <option value="L08">L08</option>
+                <option value="L09">L09</option>
+                <option value="L10">L10</option>
+                <option value="L11">L11</option>
+                <option value="L12">L12</option>
+                <option value="L13">L13</option>
+                <option value="L14">L14</option>
+                <option value="L15">L15</option>
+                <option value="L16">L16</option>
+                <option value="L17">L17</option>
+                <option value="L18">L18</option>
+                <option value="L19">L19</option>
+                <option value="L20">L20</option>
+                <option value="L21">L21</option>
+                <option value="L22">L22</option>
+                <option value="L23">L23</option>
+                <option value="L24">L24</option>
+                <option value="L25">L25</option>
+                <option value="L26">L26</option>
+                <option value="L27">L27</option>
+                <option value="L28">L28</option>
+                <option value="L29">L29</option>
+                <option value="L30">L30</option>
+            </select><br><br> 
+            <textarea id="comentario" rows="3" placeholder="Comentário"></textarea><br><br>
+            <div class="checkbox">
+                <input type="checkbox" id="C1" value="(C1)"><label for="C1"> C1</label>
+                <input type="checkbox" id="C2" value="(C2)"><label for="C2"> C2</label>
+                <input type="checkbox" id="C3" value="(C3)"><label for="C3"> C3</label>
+                <input type="checkbox" id="C4" value="(C4)"><label for="C4"> C4</label>
+                <input type="checkbox" id="C5" value="(C5)"><label for="C5"> C5</label>
+            </div><br> 
+            <input type="button" value="Adicionar" onclick="adicionar()"><br><br> 
+             <legend><span class="number">2</span> Correção</legend><br>
+            <textarea id="correcao" rows="9"></textarea> 
+        </div>
+        <footer align="center">
+            Desenvolvido por <a href="http://joalllucas.github.io" target="_blank">Joao Lucas</a>
+        </footer>
+    </body>
+</html>
